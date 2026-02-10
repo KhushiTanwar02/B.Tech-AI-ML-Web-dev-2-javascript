@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a8dff, #63cdda);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.top-section {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #5a67d8;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-row {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-row button {
+    width: 50%;
+}
+
+#eventList {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+#emptyText {
+    color: gray;
+    margin-top: 15px;
+}
+
+.bottom-card {
+    margin-top: 20px;
+}
+
+.demo-box {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.highlight {
+    color: #5a67d8;
+    font-weight: bold;
+}

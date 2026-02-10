@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎯 Smart Event Dashboard</h1>
+
+    <div class="container">
+
+        <div class="top-section">
+
+            <!-- Add New Event -->
+            <div class="card">
+                <h2>Add New Event</h2>
+
+                <label>Event Title:</label>
+                <input type="text" id="title">
+
+                <label>Event Date:</label>
+                <input type="date" id="date">
+
+                <label>Category:</label>
+                <select id="category">
+                    <option>Conference</option>
+                    <option>Workshop</option>
+                    <option>Meetup</option>
+                </select>
+
+                <label>Description:</label>
+                <textarea id="description"></textarea>
+
+                <button onclick="addEvent()">Add Event</button>
+            </div>
+
+            <!-- My Events -->
+            <div class="card">
+                <h2>My Events</h2>
+
+                <div class="btn-row">
+                    <button onclick="clearEvents()">Clear All Events</button>
+                    <button onclick="addSampleEvents()">Add Sample Events</button>
+                </div>
+
+                <ul id="eventList"></ul>
+
+                <p id="emptyText">No events yet. Add your first event!</p>
+            </div>
+
+        </div>
+
+        <!-- DOM Manipulation Demo -->
+        <div class="card bottom-card">
+            <h2>DOM Manipulation Demo</h2>
+            <h4>innerText vs innerHTML vs textContent</h4>
+
+            <div class="demo-box" id="demoBox">
+                <p><b>Original HTML:</b> &lt;strong&gt;Bold Text&lt;/strong&gt; with spaces</p>
+                <p><b>innerHTML:</b> <span id="htmlDemo"></span></p>
+                <p><b>innerText:</b> <span id="textDemo"></span></p>
+                <p><b>textContent:</b> <span id="contentDemo"></span></p>
+                <p class="highlight" id="keyText">Press any key</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
